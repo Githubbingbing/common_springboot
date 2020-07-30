@@ -84,6 +84,13 @@
             <version>5.1.10</version>
         </dependency>
         <!-- pagehelper 物理分页 end-->
+        <!--druid start-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.4</version>
+        </dependency>
+        <!--druid end-->
     </dependencies>
     <!--依赖 end-->
 
