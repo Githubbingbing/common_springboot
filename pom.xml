@@ -20,6 +20,22 @@
         <mybatis-plus-boot-starter.version>3.2.0</mybatis-plus-boot-starter.version>
     </properties>
 
+    <!-- profile可以让我们定义一系列的配置信息，然后指定其激活条件 start -->
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <!-- 激活 -->
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <spring.application.name>common_springboot</spring.application.name>
+                <spring.active.profile>dev</spring.active.profile>
+            </properties>
+        </profile>
+    </profiles>
+    <!-- profile可以让我们定义一系列的配置信息，然后指定其激活条件 end-->
+
     <!--依赖 start-->
     <dependencies>
         <dependency>
