@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.futuredata.cloud.codegen.mapper.TAuthorityMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.futuredata.cloud.codegen.entity.TAuthority" id="tAuthorityMap">
+        <result property="authId" column="auth_id"/>
+        <result property="authCode" column="auth_code"/>
+        <result property="parentAuthCode" column="parent_auth_code"/>
+        <result property="authName" column="auth_name"/>
+        <result property="authUrl" column="auth_url"/>
+        <result property="authType" column="auth_type"/>
+        <result property="authOrderby" column="auth_orderby"/>
+        <result property="createdate" column="createdate"/>
+        <result property="requestType" column="request_type"/>
+        <result property="icon" column="icon"/>
+    </resultMap>
+
+
+</mapper>

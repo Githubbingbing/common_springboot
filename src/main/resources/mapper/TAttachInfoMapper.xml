@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.futuredata.cloud.codegen.mapper.TAttachInfoMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.futuredata.cloud.codegen.entity.TAttachInfo" id="tAttachInfoMap">
+        <result property="attachId" column="attach_id"/>
+        <result property="filePath" column="file_path"/>
+        <result property="fileName" column="file_name"/>
+        <result property="fileSize" column="file_size"/>
+        <result property="flag1" column="flag1"/>
+        <result property="flag2" column="flag2"/>
+        <result property="flag3" column="flag3"/>
+        <result property="userNum" column="user_num"/>
+        <result property="createTime" column="create_time"/>
+        <result property="attachType" column="attach_type"/>
+        <result property="glNum" column="gl_num"/>
+    </resultMap>
+
+
+</mapper>

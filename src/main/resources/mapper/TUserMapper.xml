@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.futuredata.cloud.codegen.mapper.TUserMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.futuredata.cloud.codegen.entity.TUser" id="tUserMap">
+        <result property="userId" column="user_id"/>
+        <result property="userNum" column="user_num"/>
+        <result property="nickName" column="nick_name"/>
+        <result property="loginName" column="login_name"/>
+        <result property="loginPass" column="login_pass"/>
+        <result property="userSex" column="user_sex"/>
+        <result property="linkTel" column="link_tel"/>
+        <result property="userType" column="user_type"/>
+        <result property="userStatus" column="user_status"/>
+        <result property="createUserNum" column="create_user_num"/>
+        <result property="createDate" column="create_date"/>
+        <result property="flag1" column="flag1"/>
+        <result property="flag2" column="flag2"/>
+        <result property="flag3" column="flag3"/>
+    </resultMap>
+
+
+</mapper>
