@@ -20,10 +20,13 @@ import lombok.Data;
 public class TAuthority implements Serializable {
     private static final long serialVersionUID = 1L;
 
+
+    @Id
+    @Column(name = "id")
+    private String id;
     /**
      * 权限ID
      */
-    @Id
     @Column(name = "auth_id")
     private Integer authId;
     /**
@@ -59,8 +62,8 @@ public class TAuthority implements Serializable {
     /**
      * 创建时间
      */
-    @Column(name = "createdate")
-    private Date createdate;
+    @Column(name = "create_time")
+    private Date createTime;
     /**
      * 请求类型（1--pc 2--手机  -- 所有）
      */

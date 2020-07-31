@@ -20,12 +20,15 @@ import lombok.Data;
 public class TUser implements Serializable {
     private static final long serialVersionUID = 1L;
 
+
+    @Id
+    @Column(name = "id")
+    private String id;
     /**
      * 用户id--主键
      */
-    @Id
     @Column(name = "user_id")
-    private Integer userId;
+    private String userId;
     /**
      * 用户num
      */
@@ -74,8 +77,8 @@ public class TUser implements Serializable {
     /**
      * 创建时间
      */
-    @Column(name = "create_date")
-    private Date createDate;
+    @Column(name = "create_time")
+    private Date createTime;
     /**
      *
      */

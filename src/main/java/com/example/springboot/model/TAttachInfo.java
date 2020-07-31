@@ -20,10 +20,13 @@ import lombok.Data;
 public class TAttachInfo implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @Column(name = "id")
+    private String id;
+
     /**
      *
      */
-    @Id
     @Column(name = "attach_id")
     private Integer attachId;
     /**

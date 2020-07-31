@@ -20,10 +20,13 @@ import lombok.Data;
 public class TUserRole implements Serializable {
     private static final long serialVersionUID = 1L;
 
+
+    @Id
+    @Column(name = "id")
+    private String id;
     /**
      * 关联表主键
      */
-    @Id
     @Column(name = "user_role_id")
     private Integer userRoleId;
     /**

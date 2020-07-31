@@ -20,10 +20,12 @@ import lombok.Data;
 public class TProvince implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @Column(name = "id")
+    private String id;
     /**
      * province_id
      */
-    @Id
     @Column(name = "province_id")
     private Integer provinceId;
     /**

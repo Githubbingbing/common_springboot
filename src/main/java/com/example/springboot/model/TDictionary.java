@@ -20,10 +20,13 @@ import lombok.Data;
 public class TDictionary implements Serializable {
     private static final long serialVersionUID = 1L;
 
+
+    @Id
+    @Column(name = "id")
+    private String id;
     /**
      * 主键
      */
-    @Id
     @Column(name = "parent_id")
     private Integer parentId;
     /**

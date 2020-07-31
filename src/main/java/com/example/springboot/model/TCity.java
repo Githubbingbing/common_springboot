@@ -20,10 +20,12 @@ import lombok.Data;
 public class TCity implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @Column(name = "id")
+    private String id;
     /**
      * city_id
      */
-    @Id
     @Column(name = "city_id")
     private Integer cityId;
     /**

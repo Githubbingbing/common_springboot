@@ -23,7 +23,7 @@ public class TAreas implements Serializable {
      */
     @Id
     @Column(name = "id")
-    private Integer id;
+    private String id;
     /**
      *
      */
